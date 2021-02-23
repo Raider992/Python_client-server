@@ -1,0 +1,4 @@
+Название ОС:                           Microsoft Windows Vista Home Premium
+Код продукта:                          0666-0666-0666-0666
+Тип системы:                           32-разрядная ос
+Изготовитель системы:                  Microsoft Corporation
