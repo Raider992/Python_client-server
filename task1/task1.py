@@ -22,12 +22,12 @@ def process_line(text, line):
     return cut_line
 
 
-def get_data(files):
-    os_prod_list = []
-    os_name_list = []
-    os_code_list = []
-    os_type_list = []
-    for file in files:
+def get_data(file_lst):
+    os_prod_list.clear()
+    os_name_list.clear()
+    os_code_list.clear()
+    os_type_list.clear()
+    for file in file_lst:
         with open(file, 'r', encoding='utf-8') as f:
             for line in f:
                 if line.startswith('Название ОС:'):
@@ -42,19 +42,27 @@ def get_data(files):
                 if line.startswith('Изготовитель системы:'):
                     cut_line = process_line('Изготовитель системы:', line)
                     os_prod_list.append(cut_line)
-    # print(os_name_list)
-    # print(os_code_list)
-    # print(os_type_list)
-    # print(os_prod_list)
 
 
-
-def write_to_csv(file):
+def write_to_csv(filename):
     get_data(files)
+
     data = []
     if len(os_prod_list) == len(os_name_list) == len(os_type_list) == len(os_code_list):
         for i in range(3):
+            field = {
+                main_data[0]: os_name_list[i],
+                main_data[1]: os_code_list[i],
+                main_data[2]: os_type_list[i],
+                main_data[3]: os_prod_list[i]
+            }
+            data.append(field)
+
+        with open(filename, 'w', encoding='utf-8') as f:
+            f_n_writer = csv.DictWriter(f, fieldnames=main_data, quoting=csv.QUOTE_NONE)
+            f_n_writer.writeheader()
+            for d in data:
+                f_n_writer.writerow(d)
 
 
-        with open(file, 'r') as f:
-            pass
+write_to_csv('res.csv')
