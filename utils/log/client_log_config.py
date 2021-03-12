@@ -5,7 +5,7 @@ client_log = logging.getLogger('client_log')
 
 _format = logging.Formatter("%(asctime)s %(levelname)s %(module)s %(message)s")
 
-fh = logging.FileHandler('log/client.log', encoding='utf-8')
+fh = logging.FileHandler('utils/log/client.log', encoding='utf-8')
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(_format)
 
