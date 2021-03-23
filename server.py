@@ -4,10 +4,12 @@ from socket import *
 import click
 import json
 import logging
-import log.server_log_config
+import utils.log.server_log_config
+from utils.log_decorator import Trace
 
 srv_log = logging.getLogger('server_log')
 
+@Trace()
 def form_auth_resp():
     msg = {
         'response': 200,

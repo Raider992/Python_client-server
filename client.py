@@ -3,9 +3,10 @@ import click
 import time
 import json
 import logging
-import log.client_log_config
+import utils.log.client_log_config
+from utils.log_decorator import Trace
 
-
+@Trace()
 def form_auth_message():
     t = int(time.time())
     data = {
@@ -18,7 +19,7 @@ def form_auth_message():
     }
     return json.dumps(data)
 
-
+@Trace()
 def form_presence_message():
     t = int(time.time())
     data = {
@@ -36,6 +37,7 @@ def form_presence_message():
 @click.command()
 @click.option('-port', default=7777, )
 @click.option('-addr', default='localhost', help="host's address, default=localhost")
+@Trace()
 def client_function(port, addr):
     clt_log = logging.getLogger('client_log')
 
