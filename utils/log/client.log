@@ -234,3 +234,232 @@ ConnectionResetError: [WinError 10054] Удаленный хост принуд�
 2021-03-12 19:00:33,148 DEBUG client Получен ответ от сервера
 2021-03-12 19:00:33,149 DEBUG client Сформировано сообщение присутствия
 2021-03-12 19:00:33,149 DEBUG client Сообщение присутствия отправлено на сервер
+2021-03-12 19:07:19,737 DEBUG client Соединение с сервером установлено
+2021-03-12 19:07:19,738 DEBUG client Сформировано сообщение аутентификации
+2021-03-12 19:07:19,739 DEBUG client Сообщение аутентификации отправлено на сервер
+2021-03-12 19:07:19,745 DEBUG client Получен ответ от сервера
+2021-03-12 19:07:19,746 DEBUG client Сформировано сообщение присутствия
+2021-03-12 19:07:19,746 DEBUG client Сообщение присутствия отправлено на сервер
+2021-03-23 02:55:02,957 DEBUG client Соединение с сервером установлено
+2021-03-23 02:55:02,959 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 02:55:02,959 DEBUG client Сообщение аутентификации отправлено на сервер
+2021-03-23 02:55:03,177 DEBUG client Получен ответ от сервера
+2021-03-23 02:55:26,375 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 60, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 02:55:26,376 DEBUG client Соединение с сервером установлено
+2021-03-23 02:55:26,382 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 02:55:26,382 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 67, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 02:55:26,383 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 72, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 02:56:05,176 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 60, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 02:56:05,177 DEBUG client Соединение с сервером установлено
+2021-03-23 02:56:05,183 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 02:56:05,183 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 67, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 02:56:05,184 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 72, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 02:57:15,476 DEBUG client Соединение с сервером установлено
+2021-03-23 02:57:15,477 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 02:57:15,478 DEBUG client Сообщение аутентификации отправлено на сервер
+2021-03-23 02:57:15,695 DEBUG client Получен ответ от сервера
+2021-03-23 02:57:39,836 DEBUG client Соединение с сервером установлено
+2021-03-23 02:57:39,837 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 02:57:39,837 DEBUG client Сообщение аутентификации отправлено на сервер
+2021-03-23 02:58:19,755 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 60, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 02:58:19,756 DEBUG client Соединение с сервером установлено
+2021-03-23 02:58:19,761 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 02:58:19,761 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 67, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 02:58:19,762 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 72, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 02:58:27,279 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 60, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 02:58:27,280 DEBUG client Соединение с сервером установлено
+2021-03-23 02:58:27,286 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 02:58:27,286 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 67, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 02:58:27,287 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 72, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:00:24,913 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 60, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:00:24,913 DEBUG client Соединение с сервером установлено
+2021-03-23 03:00:24,914 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 03:00:24,914 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 67, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:00:24,914 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 72, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:01:11,167 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 60, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:01:11,168 DEBUG client Соединение с сервером установлено
+2021-03-23 03:01:11,174 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 03:01:11,174 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 67, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:01:11,175 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 72, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:03:16,128 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 61, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:03:16,129 DEBUG client Соединение с сервером установлено
+2021-03-23 03:03:16,135 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 03:03:16,135 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 68, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:03:16,136 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 73, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:05:15,591 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 63, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:05:15,592 DEBUG client Соединение с сервером установлено
+2021-03-23 03:05:15,598 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 03:05:15,598 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 70, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:05:15,600 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 75, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:06:53,317 ERROR client [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "client.py", line 63, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:06:53,319 DEBUG client Соединение с сервером установлено
+2021-03-23 03:06:53,348 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 03:06:53,348 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 70, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:06:53,349 ERROR client [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "client.py", line 75, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:10:21,340 ERROR clt2 [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "clt2.py", line 63, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:10:21,341 DEBUG clt2 Соединение с сервером установлено
+2021-03-23 03:10:21,346 DEBUG clt2 Сформировано сообщение аутентификации
+2021-03-23 03:10:21,347 ERROR clt2 [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "clt2.py", line 70, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:10:21,348 ERROR clt2 [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "clt2.py", line 75, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:10:51,773 DEBUG client Соединение с сервером установлено
+2021-03-23 03:10:51,774 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 03:10:51,774 DEBUG client Сообщение аутентификации отправлено на сервер
+2021-03-23 03:10:51,992 DEBUG client Получен ответ от сервера
+2021-03-23 03:11:43,343 DEBUG client Соединение с сервером установлено
+2021-03-23 03:11:43,345 DEBUG client Сформировано сообщение аутентификации
+2021-03-23 03:11:43,345 DEBUG client Сообщение аутентификации отправлено на сервер
+2021-03-23 03:11:43,567 DEBUG client Получен ответ от сервера
+2021-03-23 03:11:54,941 ERROR clt2 [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "clt2.py", line 63, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:11:54,942 DEBUG clt2 Соединение с сервером установлено
+2021-03-23 03:11:54,949 DEBUG clt2 Сформировано сообщение аутентификации
+2021-03-23 03:11:54,949 ERROR clt2 [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "clt2.py", line 70, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:11:54,950 ERROR clt2 [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "clt2.py", line 75, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:12:36,976 ERROR clt2 [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+Traceback (most recent call last):
+  File "C:/Users/Work/PycharmProjects/Python_client-server/clt2.py", line 63, in client_function
+    s.connect((addr, port))
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2021-03-23 03:12:36,977 DEBUG clt2 Соединение с сервером установлено
+2021-03-23 03:12:36,983 DEBUG clt2 Сформировано сообщение аутентификации
+2021-03-23 03:12:36,984 ERROR clt2 [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "C:/Users/Work/PycharmProjects/Python_client-server/clt2.py", line 70, in client_function
+    s.send(msg.encode('utf-8'))
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+2021-03-23 03:12:36,985 ERROR clt2 [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
+Traceback (most recent call last):
+  File "C:/Users/Work/PycharmProjects/Python_client-server/clt2.py", line 75, in client_function
+    data = s.recv(1024)
+OSError: [WinError 10057] Запрос на отправку или получение данных  (when sending on a datagram socket using a sendto call) no address was supplied
